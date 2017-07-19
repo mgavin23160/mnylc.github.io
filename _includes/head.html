@@ -32,5 +32,8 @@
     {% if site.google_analytics and jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
+    {% if page.jsarr %}
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    {% endif %}
 </head>
 

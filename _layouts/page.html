@@ -17,6 +17,11 @@
       {% include social_sharing.html %}
       {% endif %}
     </section>
+{% for js in page.jsarr %}
+     <script type="text/javascript">
+     {% include {{ js }} %}
+     </script>
+ {% endfor %}
 
     {% include footer.html %}
 
